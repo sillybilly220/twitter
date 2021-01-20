@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "quicksand ", sans-serif;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.side-item {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "mysidebar mycontent mycontent";
+}
+
+.sidebar {
+  grid-area: mysidebar;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: lightgrey;
+  font-weight: semi-bold;
+  font-size: 20px;
+}
+
+.content {
+  grid-area: mycontent;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.side-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.active {
+  color: #55acee;
+}
+
+.tweet {
+  display: grid;
+  border-style: solid;
+  border-color: lightgrey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.side-item {
+  width: 200px;
+  padding-left: 175px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.sticky-hero {
+  text-align: center;
+  border-bottom-style: solid;
+  border-bottom-color: lightgrey;
+}
+
+.tweets {
+  padding-top: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
